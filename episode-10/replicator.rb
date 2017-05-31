@@ -45,7 +45,8 @@ class Replicator
     return unless glass_in_tummy
 
     if @power && @enterprise.reactor.draw_power(3)
-      glass_in_tummy.inside.contents.shuffle!.compact!
+       glass_in_tummy.inside.contents.shuffle!.compact!
+
     end
   end
 

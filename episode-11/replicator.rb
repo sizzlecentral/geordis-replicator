@@ -1,3 +1,5 @@
+require 'pry'
+
 class Replicator
 
   attr_reader :plate
@@ -21,6 +23,7 @@ class Replicator
     mix
     adjust_temperature
     transport_glass_to_replicator_plate
+    # binding.pry
   end
 
   def retrieve_glass
@@ -43,7 +46,7 @@ class Replicator
     return unless glass_in_tummy
 
     if @power && @enterprise.reactor.draw_power(3)
-      glass_in_tummy.inside.contents.shuffle!.compact!
+     glass_in_tummy.inside.contents.shuffle!.compact!
     end
   end
 
