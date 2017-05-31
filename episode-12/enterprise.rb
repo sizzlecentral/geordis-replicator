@@ -1,3 +1,4 @@
+
 class Enterprise
 
   attr_reader :reactor, :transporter, :cupboard, :pantry, :replicator

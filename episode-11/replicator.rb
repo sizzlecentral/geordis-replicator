@@ -23,7 +23,6 @@ class Replicator
     mix
     adjust_temperature
     transport_glass_to_replicator_plate
-    # binding.pry
   end
 
   def retrieve_glass
